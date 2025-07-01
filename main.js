@@ -16,8 +16,8 @@ function mouseMove(e){
     startX = e.clientX
     startY = e.clientY
 
-    card.style.left = startX + 'px'
-    card.style.top = startY + 'px'
+    card.style.left = (card.offsetLeft - newX) + 'px'
+    card.style.top =( card.offsetTop - newY) + 'px'
 }
 
 function mouseUp(e){
